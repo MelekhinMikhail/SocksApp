@@ -60,7 +60,7 @@ public class OperationsServiceImpl implements OperationsService {
         Calendar date;
         for (Operation operation : operations) {
             date = operation.getDate();
-            if (date.get(Calendar.YEAR) == year && date.get(Calendar.MONTH)-1 == month && date.get(Calendar.DAY_OF_MONTH) == day) {
+            if (date.get(Calendar.YEAR) == year && date.get(Calendar.MONTH)+1 == month && date.get(Calendar.DAY_OF_MONTH) == day) {
                 list.add(operation);
             }
         }
